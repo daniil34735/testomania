@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест | Тестомания</title> <!-- Поменяй Title для каждого теста -->
+  <meta name="description" content="Пройди бесплатный тест и узнай свой результат.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container"><a href="index.html" class="logo">🧠 Тестомания</a></div>
+  </header>
+
+  <main class="quiz-wrapper">
+    <div class="quiz-card">
+      <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+      
+      <div id="question-block">
+        <h2 class="question-text" id="question-text">Загрузка...</h2>
+        <div class="options" id="options-container"></div>
+      </div>
+
+      <div id="result-block" class="result-block hidden">
+        <span class="result-icon" id="result-icon"></span>
+        <h2 class="result-title" id="result-title"></h2>
+        <p class="result-desc" id="result-desc"></p>
+        
+        <div class="share-buttons">
+          <button class="share-btn vk" onclick="share('vk')">Поделиться ВКонтакте</button>
+          <button class="share-btn tg" onclick="share('tg')">Отправить в Telegram</button>
+          <button class="share-btn copy" onclick="copyLink()">📋 Копировать ссылку</button>
+        </div>
+        
+        <a href="index.html" class="btn btn-outline">← Вернуться к другим тестам</a>
+      </div>
+    </div>
+    
+    <!-- SEO Текст -->
+    <article style="margin-top: 40px; color: #636e72; font-size: 0.9rem;">
+      <h3>О этом тесте</h3>
+      <p>Этот увлекательный тест поможет вам узнать больше о себе. Ответьте честно на вопросы, и система подберет наиболее точный результат, основываясь на ваших ответах.</p>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // ⚠️ ВАЖНО: Поменяй слово в скобках для каждого файла!
+    // Для test-coffee.html -> initQuiz('coffee');
+    // Для test-fantasy.html -> initQuiz('fantasy');
+    // Для test-personality.html -> initQuiz('personality');
+    // Для test-movie.html -> initQuiz('movie');
+    // Для test-relationship.html -> initQuiz('relationship');
+    
+    initQuiz('fantasy'); 
+  </script>
+</body>
+</html>
