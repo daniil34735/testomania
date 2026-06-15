@@ -183,3 +183,38 @@ header {
   .quiz-card { padding: 20px; }
   .question-text { font-size: 1.1rem; }
 }
+
+/* Стили для партнерского блока */
+.partner-block {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px dashed #dfe6e9;
+}
+
+.partner-text {
+  font-size: 0.9rem;
+  color: #636e72;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.partner-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.partner-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
